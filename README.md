@@ -22,7 +22,7 @@
 
 ## Change Log
 
-04-10-2021 00:00pm- **Launched on Netlyify** : 
+04-10-2021 00:00pm- **Launched on Heroku** : 
 
 04-10-2021 5:00pm - **Repository Created** : https://github.com/AL0YSI0US/city-explorer-api
 
@@ -33,13 +33,53 @@
 
 ## ⏰ T I M E . E S T I M A T E S
 
-## xx⚙️  : Feature One
+## ⚙️ Set up your server repository : Feature One
 
-As a user, I want to see a map of the city so that I can see the layout of the area I want to explore.
+- [x] Frame up the server
 
-- [ ] **Given** that a user enters a valid location in the input
-- [ ] **When** the user clicks the "Explore!" button
-- [ ] **Then** the map of the city is displayed on the page.
+````sh
+Estimate of time needed to complete: 120 minutes
+
+Start time: 1200
+
+Finish time: 100
+
+Actual time needed to complete: 60 minutes
+````
+````sh
+city-explorer-api
+   ├── .env
+   ├── .eslintrc.json
+   ├── .gitignore
+   ├── data
+   |   └── weather.json
+   ├── package-lock.json
+   ├── package.json
+   ├── README.md
+   └── server.js
+````
+
+## ⚙️ Weather : Feature Two
+
+As a user of City Explorer, I want to see weather info for the city I searched, so that I know how to pack for an upcoming trip.
+
+**Given** that a user enters a valid location in the input
+**When** the user clicks the "Explore!" button
+**Then** some old weather data will be displayed on the page
+
+**Back End**
+- [ ] Create a basic Express server. Verify it runs without errors.
+- [ ] Create an API endpoint of `/weather` that processes a `GET` request that contains `lat` and `lon` information.
+- [ ] Create a constructor function for a `Forecast` object, that has a properties of `date` and `description`.
+- [ ] Using each data point from the static data, create an array of `Forecast` objects, one for each day. Do the necessary data munging to ensure the objects you create contain the information as required for correct client rendering. See the sample response.
+- [ ] Send the full array back to the client who requested data from the `weather` endpoint.
+- [ ] Test your endpoint in the browser, to verify the raw response object is coming through as expected.
+
+**Front End**
+- [ ] When a city search successfully returns `lat` and `lon` info, immediately create a new request (lat/lon included) to your server's `/weather` endpoint.
+- [ ] Create a new `Weather.js` component to render forecast data to the page.
+- [ ] When the server returns the array of forecast data, show the Weather component, populated with the server data.
+- [ ] Use appropriate Bootstrap components to nicely display the forecast data.
 
 ````sh
 Estimate of time needed to complete:
@@ -51,34 +91,16 @@ Finish time:
 Actual time needed to complete:
 ````
 
+## ⚙️ Errors : Feature Three
 
-## xx⚙️  : Feature Two
+As a user, I want clear messages if something goes wrong so I know if I need to make any changes or try again in a different manner.
 
-As a user, I want to see a map of the city so that I can see the layout of the area I want to explore.
+**Given** that the server responds with an error code for any API endpoint
+**When** the user clicks the "Explore!" button
+**Then** the user will receive an error message on the page and the data will not be rendered
 
-- [ ] **Given** that a user enters a valid location in the input
-- [ ] **When** the user clicks the "Explore!" button
-- [ ] **Then** the map of the city is displayed on the page.
-
-````sh
-Estimate of time needed to complete:
-
-Start time: 
-
-Finish time:
-
-Actual time needed to complete:
-````
-
-
-
-## xx⚙️  : Feature Three
-
-As a user, I want to see a map of the city so that I can see the layout of the area I want to explore.
-
-- [ ] **Given** that a user enters a valid location in the input
-- [ ] **When** the user clicks the "Explore!" button
-- [ ] **Then** the map of the city is displayed on the page.
+- [ ] Create a function to handle errors from any API call.
+- [ ] Send a status of 500 along with an error message to the client.
 
 ````sh
 Estimate of time needed to complete:
@@ -89,18 +111,20 @@ Finish time:
 
 Actual time needed to complete:
 ````
-
-
 
 ## ❤️ Credit and Collaborations 👥
 
-Shout out to { `Hexx` } for helping me Stand up my lab
+Shout out to { `Hexx` } for helping me stand up my lab.
 
 ## Resources
 
 + [NPM JS](https://www.npmjs.com/package/axios)
 + [locationiq](https://locationiq.com/docs#search-forward-geocoding)
 + [locationiq - docs](https://locationiq.com/docs)
++ [Node JS Docs](https://nodejs.org/en/)
++ [NPM JS Docs](https://docs.npmjs.com/)
++ [Express JS Docs](http://expressjs.com/en/4x/api.html)
++ [dotenv Docs](https://www.npmjs.com/package/dotenv)
 
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
