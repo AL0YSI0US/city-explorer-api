@@ -35,7 +35,14 @@
 
 ## ⚙️ Set up your server repository : Feature One
 
-- [x] Frame up the server
+**Back End**
+- [x] Create a new repo called `city-explorer-api` on GitHub, initialized with a README file. Clone it locally, and do all your work on a meaningfully-named feature branch off of `main`.
+- [x] Run the command `npm init` to create a new project. Answer the prompts with reasonable answers, or just hit enter to accept the defaults. Review the `package.json` file that it creates for you, and edit it if desired.
+- [x] Use `npm install` to add the required dependencies to this project: `express`, `dotenv`, and `cors`.
+- [x] Manually add the remaining files identified in the folder tree above. Put appropriate content into `.gitignore` and `.eslintrc.json`.
+- [x] Copy the contents of [weather.json](https://codefellows.github.io/code-301-guide-react/curriculum/class-07/lab/starter-code/data/weather.json) and paste it into your (otherwise empty) local `/data/weather.json`. 
+- [x] Set the contents of .env to set a value for `PORT`. Ensure `.env` is in your `.gitignore` file.
+- [x] Populate your `README.md` file with the template provided in the lab. Fill in what you can at this point, and the rest before you submit your finalized assignment. 
 
 ````sh
 Estimate of time needed to complete: 120 minutes
