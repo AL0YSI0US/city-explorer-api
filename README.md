@@ -35,7 +35,7 @@
 
 ## ⚙️ Set up your server repository : Feature One
 
-**Back End**
+{ `**Back End**` }
 - [x] Create a new repo called `city-explorer-api` on GitHub, initialized with a README file. Clone it locally, and do all your work on a meaningfully-named feature branch off of `main`.
 - [x] Run the command `npm init` to create a new project. Answer the prompts with reasonable answers, or just hit enter to accept the defaults. Review the `package.json` file that it creates for you, and edit it if desired.
 - [x] Use `npm install` to add the required dependencies to this project: `express`, `dotenv`, and `cors`.
@@ -74,7 +74,7 @@ As a user of City Explorer, I want to see weather info for the city I searched, 
 **When** the user clicks the "Explore!" button
 **Then** some old weather data will be displayed on the page
 
-**Back End**
+{ `**Back End**` }
 - [ ] Create a basic Express server. Verify it runs without errors.
 - [ ] Create an API endpoint of `/weather` that processes a `GET` request that contains `lat` and `lon` information.
 - [ ] Create a constructor function for a `Forecast` object, that has a properties of `date` and `description`.
@@ -82,7 +82,7 @@ As a user of City Explorer, I want to see weather info for the city I searched, 
 - [ ] Send the full array back to the client who requested data from the `weather` endpoint.
 - [ ] Test your endpoint in the browser, to verify the raw response object is coming through as expected.
 
-**Front End**
+{ `**Front End**` }
 - [ ] When a city search successfully returns `lat` and `lon` info, immediately create a new request (lat/lon included) to your server's `/weather` endpoint.
 - [ ] Create a new `Weather.js` component to render forecast data to the page.
 - [ ] When the server returns the array of forecast data, show the Weather component, populated with the server data.
