@@ -22,7 +22,7 @@
 
 ## Change Log
 
-04-10-2021 00:00pm- **Launched on Heroku** : 
+04-10-2021 09:30pm- **Deployed from Heroku** 
 
 04-10-2021 5:00pm - **Repository Created** : https://github.com/AL0YSI0US/city-explorer-api
 
