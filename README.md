@@ -18,14 +18,19 @@
 
 ## Architecture
 
+
+**Languages :** JavaScript | HTML | CSS | Markdown
+
+**Libraries :** Node | LocationIq
+
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 ## Change Log
 
-
 04-11-2021 8:13pm **Successfully Deployed from Heroku** · v7 · f357bef5
 
 04-10-2021 09:30pm- **Failed to deploy properly from Heroku** 
+
 
 04-10-2021 5:00pm - **Repository Created** : https://github.com/AL0YSI0US/city-explorer-api
 
@@ -39,13 +44,14 @@
 ## ⚙️ Set up your server repository : Feature One
 
 { `Back End` }
-- [x] Create a new repo called `city-explorer-api` on GitHub, initialized with a README file. Clone it locally, and do all your work on a meaningfully-named feature branch off of `main`.
-- [x] Run the command `npm init` to create a new project. Answer the prompts with reasonable answers, or just hit enter to accept the defaults. Review the `package.json` file that it creates for you, and edit it if desired.
-- [x] Use `npm install` to add the required dependencies to this project: `express`, `dotenv`, and `cors`.
-- [x] Manually add the remaining files identified in the folder tree above. Put appropriate content into `.gitignore` and `.eslintrc.json`.
-- [x] Copy the contents of [weather.json](https://codefellows.github.io/code-301-guide-react/curriculum/class-07/lab/starter-code/data/weather.json) and paste it into your (otherwise empty) local `/data/weather.json`. 
-- [x] Set the contents of .env to set a value for `PORT`. Ensure `.env` is in your `.gitignore` file.
-- [x] Populate your `README.md` file with the template provided in the lab. Fill in what you can at this point, and the rest before you submit your finalized assignment. 
+
+- [X] Create a new repo called `city-explorer-api` on GitHub, initialized with a README file. Clone it locally, and do all your work on a meaningfully-named feature branch off of `main`.
+- [X] Run the command `npm init` to create a new project. Answer the prompts with reasonable answers, or just hit enter to accept the defaults. Review the `package.json` file that it creates for you, and edit it if desired.
+- [X] Use `npm install` to add the required dependencies to this project: `express`, `dotenv`, and `cors`.
+- [X] Manually add the remaining files identified in the folder tree above. Put appropriate content into `.gitignore` and `.eslintrc.json`.
+- [X] Copy the contents of [weather.json](https://codefellows.github.io/code-301-guide-react/curriculum/class-07/lab/starter-code/data/weather.json) and paste it into your (otherwise empty) local `/data/weather.json`.
+- [X] Set the contents of .env to set a value for `PORT`. Ensure `.env` is in your `.gitignore` file.
+- [X] Populate your `README.md` file with the template provided in the lab. Fill in what you can at this point, and the rest before you submit your finalized assignment.
 
 ````sh
 Estimate of time needed to complete: 120 minutes
@@ -56,6 +62,7 @@ Finish time: 100
 
 Actual time needed to complete: 60 minutes
 ````
+
 ````sh
 city-explorer-api
    ├── .env
@@ -78,6 +85,7 @@ As a user of City Explorer, I want to see weather info for the city I searched, 
 **Then** some old weather data will be displayed on the page
 
 { `Back End` }
+
 - [ ] Create a basic Express server. Verify it runs without errors.
 - [ ] Create an API endpoint of `/weather` that processes a `GET` request that contains `lat` and `lon` information.
 - [ ] Create a constructor function for a `Forecast` object, that has a properties of `date` and `description`.
@@ -86,6 +94,7 @@ As a user of City Explorer, I want to see weather info for the city I searched, 
 - [ ] Test your endpoint in the browser, to verify the raw response object is coming through as expected.
 
 { `Front End` }
+
 - [ ] When a city search successfully returns `lat` and `lon` info, immediately create a new request (lat/lon included) to your server's `/weather` endpoint.
 - [ ] Create a new `Weather.js` component to render forecast data to the page.
 - [ ] When the server returns the array of forecast data, show the Weather component, populated with the server data.
