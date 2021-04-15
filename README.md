@@ -18,10 +18,9 @@
 
 ## Architecture
 
-
 **Languages :** JavaScript | HTML | CSS | Markdown
 
-**Libraries :** Node | LocationIq
+**Libraries :** Node 
 
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
@@ -29,8 +28,7 @@
 
 04-11-2021 8:13pm **Successfully Deployed from Heroku** · v7 · f357bef5
 
-04-10-2021 09:30pm- **Failed to deploy properly from Heroku** 
-
+04-10-2021 09:30pm- **Failed to deploy properly from Heroku**
 
 04-10-2021 5:00pm - **Repository Created** : https://github.com/AL0YSI0US/city-explorer-api
 
@@ -86,28 +84,28 @@ As a user of City Explorer, I want to see weather info for the city I searched, 
 
 { `Back End` }
 
-- [ ] Create a basic Express server. Verify it runs without errors.
-- [ ] Create an API endpoint of `/weather` that processes a `GET` request that contains `lat` and `lon` information.
-- [ ] Create a constructor function for a `Forecast` object, that has a properties of `date` and `description`.
-- [ ] Using each data point from the static data, create an array of `Forecast` objects, one for each day. Do the necessary data munging to ensure the objects you create contain the information as required for correct client rendering. See the sample response.
-- [ ] Send the full array back to the client who requested data from the `weather` endpoint.
-- [ ] Test your endpoint in the browser, to verify the raw response object is coming through as expected.
+- [X] Create a basic Express server. Verify it runs without errors.
+- [X] Create an API endpoint of `/weather` that processes a `GET` request that contains `lat` and `lon` information.
+- [X] Create a constructor function for a `Forecast` object, that has a properties of `date` and `description`.
+- [X] Using each data point from the static data, create an array of `Forecast` objects, one for each day. Do the necessary data munging to ensure the objects you create contain the information as required for correct client rendering. See the sample response.
+- [X] Send the full array back to the client who requested data from the `weather` endpoint.
+- [X] Test your endpoint in the browser, to verify the raw response object is coming through as expected.
 
 { `Front End` }
 
-- [ ] When a city search successfully returns `lat` and `lon` info, immediately create a new request (lat/lon included) to your server's `/weather` endpoint.
+- [X] When a city search successfully returns `lat` and `lon` info, immediately create a new request (lat/lon included) to your server's `/weather` endpoint.
 - [ ] Create a new `Weather.js` component to render forecast data to the page.
 - [ ] When the server returns the array of forecast data, show the Weather component, populated with the server data.
 - [ ] Use appropriate Bootstrap components to nicely display the forecast data.
 
-````sh
-Estimate of time needed to complete:
+````2sh
+Estimate of time needed to complete: 120 minutes
 
-Start time: 
+Start time: 12:00 
 
-Finish time:
+Finish time: 2:02
 
-Actual time needed to complete:
+Actual time needed to complete: 122 minutes
 ````
 
 ## ⚙️ Errors : Feature Three
@@ -133,7 +131,48 @@ Actual time needed to complete:
 
 ## ❤️ Credit and Collaborations 👥
 
-Shout out to { `Hexx` } for helping me stand up my lab.
+Shout out to { `Hexx` } for helping me stand up my lab. Making sense of the trello board was a bit of a task initially.
+
+Shout out to { `Daniel` } for helping me get my server to properly access the data I have located within my `weather.json` file.
+
++ I couldn't remember how to use the web browser to verify that my server could in fact send data elsewhere. { `Daniel` } talked me through opening my web browser and typing in the following commands:
+
+```sh
+1. http://localhost:3000/
+
+2. **Then** change the default sever number to reflect the one in use
+
+3. http://localhost:3002/
+
+4. **Then** add the `weather.json` file path 
+
+5. http://localhost:3002/weather
+```
+
+````javascript
+// Desired resultls looked like this for me:
+
+[{
+  "date":"2021-03-23",
+  "description":"Heavy rain",
+  "lowTemp":18.1,"hiTemp":19.9
+},
+{
+  "date":"2021-03-24",
+  "description":"Few clouds",
+  "lowTemp":16.1,"hiTemp":26.9
+},
+{  "date":"2021-03-25",
+  "description":"Broken clouds",
+  "lowTemp":14.9,"hiTemp":26.5
+},
+ {  
+  "date":"2021-03-26",
+  "description":"Broken clouds",
+  "lowTemp":14.5,"hiTemp":21.9
+}]
+````
+
 
 ## Resources
 
