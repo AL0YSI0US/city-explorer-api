@@ -2,7 +2,7 @@
 
 **Author**: Aloysious
 
-**Version**: 1.3.0
+**Version**: 1.7.15
 
 + [{ `city-explorer Trello Project Board` }](https://trello.com/b/0jJjZi3c/city-explorer-trello-board)
 <!-- increment the patch/fix/version number if you make more commits past your first submission -->
@@ -23,6 +23,18 @@
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 ## Change Log
+
+04-17-2021 7:09pm **Successfully Deployed from Heroku** · v15 · 734010df
+
+04-15-2021 4:55pm **Successfully Deployed from Heroku** · v12 · 4e12091c
+
+04-15-2021  4:48pm **Successfully Deployed from Heroku** · v11 · f357bef5
+
+04-14-2021  1:51am **Successfully Deployed from Heroku** · v10 · 46a143cb
+
+04-13-2021 5:02pm **Successfully Deployed from Heroku** · v9 · 01bac221
+
+04-12-2021 10:58pm **Successfully Deployed from Heroku** · v8 · 37605f06
 
 04-11-2021 8:13pm **Successfully Deployed from Heroku** · v7 · f357bef5
 
