@@ -5,21 +5,25 @@
 **Version**: 1.3.0
 
 + [{ `city-explorer Trello Project Board` }](https://trello.com/b/0jJjZi3c/city-explorer-trello-board)
+
 <!-- increment the patch/fix/version number if you make more commits past your first submission -->
 
 ## Overview
+
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
 ## Getting Started
+
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
 
 **Languages :** JavaScript | HTML | CSS | Markdown
 
-**Libraries :** Node 
+**Libraries :** Node
 
-**Tools :** VS Code | GitHub | Trello  
+**Tools :** VS Code | GitHub | Trello
+
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 ## Change Log
@@ -29,6 +33,7 @@
 04-10-2021 09:30pm- **Failed to deploy properly from Heroku**
 
 04-10-2021 5:00pm - **Repository Created** : https://github.com/AL0YSI0US/city-explorer-api
+
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. 
 -->
@@ -125,13 +130,15 @@ Finish time:
 Actual time needed to complete:
 ````
 
+
+
 <h2 align="center">❤️ Credit and Collaborations 👥</h2>
 
 Shout out to { `Hexx` } for helping me stand up my lab. Making sense of the trello board was a bit of a task initially.
 
 Shout out to { `Daniel` } for helping me get my server to properly access the data I have located within my `weather.json` file.
 
-+ I couldn't remember how to use the web browser to verify that my server could in fact send data elsewhere. 
++ I couldn't remember how to use the web browser to verify that my server could in fact send data elsewhere.
 
 { `Daniel` } talked me through opening my web browser and typing in the following commands:
 
@@ -168,7 +175,6 @@ Shout out to { `Daniel` } for helping me get my server to properly access the da
   "lowTemp":14.5,"hiTemp":21.9
 }]
 ````
-
 
 ## Resources
 
