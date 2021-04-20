@@ -1,7 +1,5 @@
 'use strict';
 console.log('❤️ hello aloysious. . . welcome to the back-end! ❤️');
-// create handler for the weatherdata ???
-// const weatherData = require('./data/weather.json'); DNN
 
 // require express ---------------------------------[ install ] : npm install express -]
 const express = require('express');
@@ -55,6 +53,7 @@ function DailyWeather(day) {
   this.lowTemp = day.low_temp;
   this.hiTemp = day.max_temp;
 }
+//-------------------------------------------------------------- { ASSISTED BY: TA JOE & RYAN & DANIEL }
 //------------------------------------------------------------------------------------------------------ M O V I E  . D A T A -------------X
 // https://api.themoviedb.org/3/search/movie?api_key=a567883dd6a7eef4719ea154597c127e&query=seattle
 app.get('/movies', (request, response) => {
@@ -81,7 +80,7 @@ function Movie(movie) {
   this.popularity = movie.popularity;
   this.released_date = movie.release_date;
 }
-// base_url file_size file_path https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg MOVIE IMAGES WILL NEED THREE PARAMETERS: ???
+//-------------------------------------------------------------- { ASSISTED BY: TA CHANCE }
 //---------------------------------------------------------------------------------------------------- E R R O R  . H A N D L I N G -------X
 // TODO 
 // create a function to handle errors from any API call
@@ -90,6 +89,7 @@ function handleErrors(err, response) {
   console.log(err);
   response.status(500).send(`Internal Error`);
 }
+//-------------------------------------------------------------- { ASSISTED BY: TA JOE & TA KRISTIAN }
 //----------------------------------------------------------------------------------------------------------------- L I S T E N I N G ------X
 console.log('ooooh data!!!!!');
 app.listen(PORT, () => console.log(`server is listening on port ${PORT}`));
