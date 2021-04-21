@@ -1,4 +1,5 @@
 'use strict';
+
 console.log('❤️ hello aloysious. . . welcome to the back-end! ❤️');
 
 // require express ---------------------------------[ install ] : npm install express -]
@@ -58,7 +59,7 @@ function DailyWeather(day) {
 // https://api.themoviedb.org/3/search/movie?api_key=a567883dd6a7eef4719ea154597c127e&query=seattle
 app.get('/movies', (request, response) => {
   console.log(request.query);
-  superagent.get('https://api.themoviedb.org/3/search/movie?api_key=a567883dd6a7eef4719ea154597c127e&query=seattle')
+  superagent.get('https://api.themoviedb.org/3/search/movie')
   .query({
     query: request.query.location,
     api_key: process.env.MOVIE_API_KEY
@@ -93,4 +94,3 @@ function handleErrors(err, response) {
 //----------------------------------------------------------------------------------------------------------------- L I S T E N I N G ------X
 console.log('ooooh data!!!!!');
 app.listen(PORT, () => console.log(`server is listening on port ${PORT}`));
-
