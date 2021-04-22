@@ -1,8 +1,9 @@
 'use strict';
+const handleErrors = require('./errors');
 
 const superagent = require('superagent');
 
-app.get('/weather', (request, response) => {
+function weatherbitIoData(request, response) {
   console.log(request.query);
   superagent.get('https://api.weatherbit.io/v2.0/forecast/daily')
     .query({
@@ -19,13 +20,12 @@ app.get('/weather', (request, response) => {
     .catch(error => {
       handleErrors(error.message);
     })
-})
-
-function DailyWeather(day) {
-  this.date = day.valid_date;
-  this.description = day.weather.description;
-  this.lowTemp = day.low_temp;
-  this.hiTemp = day.max_temp;
+  function DailyWeather(day) {
+    this.date = day.valid_date;
+    this.description = day.weather.description;
+    this.lowTemp = day.low_temp;
+    this.hiTemp = day.max_temp;
+  }
 }
 
 module.exports = weatherbitIoData;
