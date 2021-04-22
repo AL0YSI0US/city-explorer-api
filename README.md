@@ -165,6 +165,14 @@ Actual time needed to complete: 120 minutes
 
 Shout out to { `Hexx` } for helping me stand up my lab. Making sense of the trello board was a bit of a task initially.
 
+Shout out to { `Daniel` } for helping me brainstorm error handling and for being a stellar coding buddy along this journey!!!
+
+Shout out to { `Michelle` } for helping me debug/ implement my error messages
+
+Shout out to { `TA JOE & TA KRISTIAN` } between the two of them I managed to end up with an error handler I was quite pleased with. 
+
+Shout out to { `TA Chance` } for helped me access the movie database which was a bit different than the weather api imo
+
 Shout out to { `Daniel` } for helping me get my server to properly access the data I have located within my `weather.json` file.
 
 + I couldn't remember how to use the web browser to verify that my server could in fact send data elsewhere.
@@ -204,9 +212,6 @@ Shout out to { `Daniel` } for helping me get my server to properly access the da
   "lowTemp":14.5,"hiTemp":21.9
 }]
 ````
-Shout out to { `Daniel` } for helping me brainstorm error handling
-
-Shout out to { `Michelle` } for helping me debug/ implement my error messages
 
 ## Resources
 
