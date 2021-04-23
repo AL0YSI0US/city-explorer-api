@@ -8,7 +8,7 @@ function weatherbitIoData(request, response) {
   superagent.get('https://api.weatherbit.io/v2.0/forecast/daily')
     .query({
       key: process.env.WEATHERBIT_API_KEY,
-      days: '10',
+      days: '12',
       units: 'I',
       lat: request.query.lat,
       lon: request.query.lon
